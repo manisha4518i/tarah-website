@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TARAH.com</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+    <img src="{{ url_for('static', filename='logo.jpeg') }}" class="logo">
+    <h1>TARAH</h1>
+    <p>WEB • DESIGN • DEVELOPMENT</p>
+</header>
+
+<!-- SERVICES -->
+<section id="services">
+    <h2>Our Services</h2>
+
+    <div class="service" onclick="openService('web')">Website Development</div>
+    <div class="service" onclick="openService('marketing')">Digital Marketing</div>
+    <div class="service" onclick="openService('photo')">Photography</div>
+    <div class="service" onclick="openService('catalogue')">Catalogue Design</div>
+    <div class="service" onclick="openService('event')">Event Organization</div>
+</section>
+
+<!-- SERVICE DETAILS -->
+<section id="service-details" class="hidden">
+    <h2 id="service-title"></h2>
+    <p id="service-text"></p>
+
+    <!-- IMAGES BELOW TEXT -->
+    <div id="service-images"></div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact</h2>
+
+    <div class="contact-card">
+        <p><strong>Manager:</strong> Mula Tarun</p>
+        <p><strong>Phone:</strong> 8501003958</p>
+        <p><strong>Email:</strong> yrhd3958@gmail.com</p>
+        <p><strong>Website:</strong> TARAH.com</p>
+    </div>
+</section>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
